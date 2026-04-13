@@ -32,3 +32,11 @@ async function basicAsync() {
     console.error("Error reading file:", err);
   }
 }
+
+async function main() {
+  simpleCallback();
+  await simplePromise();
+  await basicAsync();
+}
+
+main();
