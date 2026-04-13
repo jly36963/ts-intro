@@ -65,6 +65,7 @@ function reverse<T extends string>(str: T) {
   return str.split("").reverse().join("") as Reverse<T>;
 }
 
+/* eslint-disable @typescript-eslint/no-namespace, @typescript-eslint/no-unused-vars */
 namespace _ReverseTests {
   type _test1 = Expect<Equal<Reverse<"hello">, "olleh">>;
   type _test2 = Expect<Equal<Reverse<"123">, "321">>;
@@ -79,6 +80,7 @@ namespace _ReverseTests {
   type _testTS2 = Expect<Equal<Reverse<`abc${string}xyz`>, `zyx${string}cba`>>;
   type _testTS3 = Expect<Equal<Reverse<`${string}xyz`>, `zyx${string}`>>;
 }
+/* eslint-enable @typescript-eslint/no-namespace, @typescript-eslint/no-unused-vars */
 
 function complexGenerics() {
   const input = "hello";
