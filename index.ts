@@ -39,6 +39,7 @@ function basicGenerics() {
 // Type Theory
 // ---
 
+/* eslint-disable @typescript-eslint/no-namespace, @typescript-eslint/no-unused-vars */
 namespace _TypeTheory {
   // Type A represents a set of 3 possible values
   type A = 1 | 2 | 3;
@@ -63,6 +64,7 @@ namespace _TypeTheory {
   type _ExpectTest5 = Expect<Extends<string, string | null>>;
   type _ExpectTest6 = Expect<Extends<string | null, unknown>>;
 }
+/* eslint-enable @typescript-eslint/no-namespace, @typescript-eslint/no-unused-vars */
 
 // ---
 // Narrowing (if/else, ternaries, early return, throw)

@@ -6,6 +6,7 @@ type Person1 = {
   name: string;
 };
 type P1 = Person1 & { age: number };
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 type _P1Pretty = Prettify<P1>;
 
 interface Person2 {

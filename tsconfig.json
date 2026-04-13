@@ -1,15 +1,14 @@
 {
-  "extends": "./node_modules/gts/tsconfig-google.json",
   "compilerOptions": {
+    "esModuleInterop": true,
+    "skipLibCheck": true,
     "target": "ESNext",
-    "module": "es2020",
-    "allowSyntheticDefaultImports": true,
-    "removeComments": true,
-    "sourceMap": true,
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "moduleDetection": "force",
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
     "noEmit": true, // Check types, don't build
-    "outDir": "build",
-    "rootDir": ".",
-    "typeRoots": ["./types/declarations/", "./node_modules/@types/"],
     "lib": ["ESNext", "DOM"],
     "types": ["node"],
     "allowImportingTsExtensions": true,
