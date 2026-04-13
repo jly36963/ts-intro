@@ -32,7 +32,7 @@ function simpleFP() {
   const values = [1, 2, 3, 4, 5];
   const result = map(values, (v) => v ** 2);
   const expected = [1, 4, 9, 16, 25];
-  assert(result === expected);
+  assert.deepStrictEqual(result, expected);
 
   console.log(`values: ${values}`);
   console.log(`result: ${result}`);
